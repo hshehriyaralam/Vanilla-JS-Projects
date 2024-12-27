@@ -1,0 +1,252 @@
+[
+    {
+        "city": "Karachi",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Lahore",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Islamabad",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Rawalpindi",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Peshawar",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Quetta",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Faisalabad",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Multan",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Sialkot",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Gujranwala",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Hyderabad",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Sukkur",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Bahawalpur",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Abbottabad",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Sargodha",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Jhelum",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Mardan",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Muzaffarabad",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Gwadar",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Mirpur",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Chitral",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Dera Ismail Khan",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Nowshera",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Kotli",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Swat",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Skardu",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Gilgit",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Khanewal",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Kasur",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Rahim Yar Khan",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Tokyo",
+        "country": "Japan",
+        "abbreviation": "JP"
+    },
+    {
+        "city": "Delhi",
+        "country": "India",
+        "abbreviation": "IN"
+    },
+    {
+        "city": "Shanghai",
+        "country": "China",
+        "abbreviation": "CN"
+    },
+    {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "abbreviation": "TH"
+    },
+    {
+        "city": "Seoul",
+        "country": "South Korea",
+        "abbreviation": "KR"
+    },
+    {
+        "city": "Jakarta",
+        "country": "Indonesia",
+        "abbreviation": "ID"
+    },
+    {
+        "city": "Manila",
+        "country": "Philippines",
+        "abbreviation": "PH"
+    },
+    {
+        "city": "Kuala Lumpur",
+        "country": "Malaysia",
+        "abbreviation": "MY"
+    },
+    {
+        "city": "Islamabad",
+        "country": "Pakistan",
+        "abbreviation": "PK"
+    },
+    {
+        "city": "Dhaka",
+        "country": "Bangladesh",
+        "abbreviation": "BD"
+    },
+    {
+        "city": "Singapore",
+        "country": "Singapore",
+        "abbreviation": "SG"
+    },
+    {
+        "city": "Riyadh",
+        "country": "Saudi Arabia",
+        "abbreviation": "SA"
+    },
+    {
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "abbreviation": "AE"
+    },
+    {
+        "city": "Istanbul",
+        "country": "Turkey",
+        "abbreviation": "TR"
+    },
+    {
+        "city": "Kabul",
+        "country": "Afghanistan",
+        "abbreviation": "AF"
+    },
+    {
+        "city": "Tehran",
+        "country": "Iran",
+        "abbreviation": "IR"
+    },
+    {
+        "city": "Baku",
+        "country": "Azerbaijan",
+        "abbreviation": "AZ"
+    },
+    {
+        "city": "Tashkent",
+        "country": "Uzbekistan",
+        "abbreviation": "UZ"
+    },
+    {
+        "city": "Colombo",
+        "country": "Sri Lanka",
+        "abbreviation": "LK"
+    },
+    {
+        "city": "Doha",
+        "country": "Qatar",
+        "abbreviation": "QA"
+    }
+]

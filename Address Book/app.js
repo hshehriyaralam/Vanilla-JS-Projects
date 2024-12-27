@@ -42,12 +42,15 @@ let addrBookList = document.querySelector('#addr-book-list tbody')
     // Add Address
     static addAddress(address){
       let addresses = Address.getAddresses();
+      console.log(addresses);
+      
       addresses.push(address)
       localStorage.setItem('addresses',JSON.stringify(addresses));
-      
-        
-        
     }
+
+
+
+    //get address
     static getAddresses(){
         // from  local storage 
         let addresses;
@@ -140,7 +143,7 @@ class UI {
                 <button type="submit" id="update-btn"  data-id="${id}" >Update </button>
                 <button type="button" id="delete-btn"  data-id="${id}" >Delete </button>
                 `;
-                UI.showModal()
+                // UI.showModal()
             }
         })
     };
@@ -164,13 +167,13 @@ class UI {
 window.addEventListener('DOMContentLoaded', () => {
     loadJSON();
     cityLoad();
-    evenListerens();
+    eventListerens();
     UI.showAddressList();
 })
 
 
 // eventListerns
-function evenListerens(){
+function eventListerens(){
     // show add item modal 
     addBtn.addEventListener('click', () => {
         form.reset();
@@ -370,8 +373,6 @@ function  getFormData(){
    
 //    console.log(addrName, firstName , lastName , email , phone , streetAddr , city , postalCode , country , labels);
    return inputValidStatus.includes(false)  ? false : true;
-   
-
 }
 function addErrMsg(inputBox){
     inputBox.classList.add('errorMsg');
