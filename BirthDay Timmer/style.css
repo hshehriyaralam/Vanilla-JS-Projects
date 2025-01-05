@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #121212;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+.overlay {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 700px;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+.birthday-input {
+    margin-bottom: 40px;
+}
+
+.birthday-input input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #1c1c1c;
+    color: white;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.birthday-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #6200ea;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.birthday-input button:hover {
+    background: #3700b3;
+    box-shadow: 0 0 10px #6200ea;
+}
+
+.timer-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-col {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.timer-col div {
+    text-align: center;
+    padding: 10px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 110px;
+}
+
+.timer-col h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #bb86fc;
+}
+
+.timer-col p {
+    font-size: 1rem;
+    color: #f5f5f5;
+}
+.birthday-input input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #1c1c1c;
+    color: white;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
