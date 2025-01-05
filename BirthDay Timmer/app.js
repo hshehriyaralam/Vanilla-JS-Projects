@@ -10,6 +10,10 @@ let minutes = document.getElementById('minutes')
 let seconds = document.getElementById('seconds')
 
 
+
+let prompt = document.getElementById('prompt')
+let wish = `! May Your Day Be As Special As You Are! 🎂🎉` 
+
 // Clock Function
 function clock(){
     const end = new Date(endDate.value)
@@ -28,7 +32,8 @@ function clock(){
 
 startCountDown.addEventListener('click',() => {
 
-    userName.innerHTML = `Hello ${NameInput.value}`
+    userName.innerHTML = ` ${NameInput.value}`
+    prompt.innerHTML = wish
     birthdayHeading.innerHTML = endDate.value
     // console.log("endDate",endDate.value);
     // clock()
