@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f5f5f5; /* Light text for better contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 36rem;
+    width: 36rem;
+    background-color: #2e2e2e; /* Dark container background */
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Slightly rounded corners */
+}
+
+.score-container {
+    height: 4rem;
+    width: 36rem;
+    background-color: #444; /* Darker header for contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    color: #f0db4f; /* Highlighted yellow text */
+    border-radius: 10px;
+    border-bottom: 2px solid #555; /* Subtle border */
+}
+
+.game-container {
+    height: 32rem;
+    width: 36rem;
+    display: grid;
+    grid-template: repeat(25, 1fr) / repeat(25, 1fr);
+    background-color: #1a1a1a; /* Match the body background */
+    border: 2px solid #555; /* Game area border */
+    border-radius: 10px;
+}
+
+.food {
+    background-color: #4caf50; /* Bright green for food */
+    border-radius: 70%;
+    box-shadow: 0 0 10px 2px rgba(76, 175, 80, 0.8); /* Glow effect */
+}
+
+.snake {
+    background-color: #e53935; /* Bright red for the snake */
+    box-shadow: 0 0 5px 1px rgba(229, 57, 53, 0.8); /* Subtle glow */
+    grid-area: 12/12;
+}
