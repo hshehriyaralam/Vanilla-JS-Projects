@@ -1,104 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-input:focus-visible{
-    outline: 0;
-}
-.main{
-    background-color: #1D1D1D;
-    min-height: 100vh;
+
+body {
+    background-color: #121212; /* Darker background */
+    color: #e0e0e0; /* Lighter text color for contrast */
     display: flex;
     justify-content: center;
     align-items: center;
-  
-
-}
-.box{
-    min-width: 500px;
+    height: 100vh;
+    font-size: 16px;
     padding: 10px;
-    box-shadow: 0 4px 10px rgba(22, 21, 21, 0.771);
-    background: #B16e06;
-    border-radius: 2px;
-    margin-top: 10px;  
 }
-#pass-box{
-    width: 100%;
-    display: block;
-    background-color: #ffff;
-    font-size: 30px;
-    padding: 10px;
-    border-radius: 5px;
-  
 
-}
-.row{
-    width: 100%;
+.main {
     display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    justify-content:space-between;
-    color: #ffff;
-    font-size: 20px;
-  
-}
-label{
-    user-select: none;
-}
-#btn{
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    font-size: 20px;
+}
+
+.box {
+    background: linear-gradient(145deg, #333333, #1c1c1c); /* Gradient dark box */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: none;
+}
+
+.title {
+    color: #58a6ff; /* Bright blue for title */
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+#pass-box {
+    display: block;
+    background-color: #1c1c1c;
+    color: #58a6ff;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    color: #c9d1d9;
+    font-size: 16px;
+}
+
+input {
+    background-color: #21262d; /* Dark background for input fields */
+    color: #e0e0e0; /* Text color */
+    border: 1px solid #30363d;
+    padding: 12px 15px;
+    border-radius: 8px;
     outline: none;
-    border: 0;
-    padding: 10px;
-    background-color: #3283d3;
+    text-align: center;
+    width: 50%;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+}
+
+input:focus {
+    border-color: #58a6ff;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.6);
+}
+
+#btn {
+    background: linear-gradient(145deg, #4caf50, #388e3c); /* Gradient green button */
     color: white;
-    margin-top: 10px;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-@media screen and (max-width: 600px){ 
-    main{
-        background-color: #1D1D1D;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-    
-    }
-    .box{
-        min-width: 300px;
-        padding: 10px;
-        box-shadow: 0 4px 10px rgba(22, 21, 21, 0.771);
-        background: #B16e06;
-        border-radius: 2px;
-        margin-top: 10px;  
-    }
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #000;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
+#btn:hover {
+    background: linear-gradient(145deg, #66bb6a, #2e7d32); /* Lighter green on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
 
+@media screen and (max-width: 600px) {
+    .box {
+        padding: 25px 20px;
+    }
 
+    .title {
+        font-size: 1.5rem;
+    }
 
+    #pass-box {
+        font-size: 1.2rem;
+    }
 
+    input {
+        width: 80%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
