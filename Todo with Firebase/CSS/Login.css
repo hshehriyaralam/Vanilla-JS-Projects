@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #21262d; /* TODO background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff; /* TODO font color for all text */
+}
+
+/* Authentication Container */
+.auth-container {
+    width: 100%;
+    max-width: 500px; /* Increased form width */
+    padding: 20px;
+}
+
+/* Auth Box Styling */
+.auth-box {
+    background-color: #161b22; /* Slightly lighter dark background */
+    border-radius: 15px;
+    padding: 40px; /* Increased padding for larger appearance */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6); /* Shadow for the box */
+    text-align: center;
+}
+
+.auth-box h1 {
+    font-size: 32px; /* Increased font size for heading */
+    margin-bottom: 30px;
+    color: #ffffff; /* TODO font color for heading */
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap between fields */
+}
+
+/* Form Group */
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px; /* Increased label font size */
+    margin-bottom: 5px;
+    color: #ffffff; /* TODO font color for labels */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px; /* Larger input padding */
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #21262d; /* Input background */
+    color: #ffffff; /* TODO font color for input */
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    transition: box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+    box-shadow: 0px 0px 10px rgba(88, 166, 255, 0.8); /* Blue glow on focus */
+}
+
+/* Button */
+.btn {
+    padding: 15px; /* Larger button padding */
+    font-size: 18px; /* Increased button font size */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #ff4d4f; /* Remove button color */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); /* Button shadow */
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(255, 77, 79, 0.8); /* Red hover shadow */
+    background-color: #ff6d6f; /* Slightly brighter red on hover */
+}
+
+/* Auth Text */
+.auth-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ffffff; /* TODO font color for links */
+}
+
+.auth-text a {
+    color: #58a6ff; /* Blue links */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.auth-text a:hover {
+    color: #79c0ff; /* Lighter blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .auth-box {
+        padding: 20px;
+    }
+
+    .auth-box h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
