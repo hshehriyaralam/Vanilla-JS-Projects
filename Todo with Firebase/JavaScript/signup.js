@@ -1,3 +1,13 @@
+window.addEventListener("load", () => {
+   if(localStorage.getItem("User")){
+      window.location.replace('../Pages/login.html')
+   }
+})
+
+
+
+
+
 import { auth, 
    createUserWithEmailAndPassword, 
    setDoc,
@@ -7,11 +17,7 @@ import { auth,
 
 
 
-
-   
-
-
-let signUpHandler = async () => {
+const signUpHandler = async () => {
    try{
 
       let name = document.getElementById('name')
@@ -29,16 +35,16 @@ let signUpHandler = async () => {
          email:email.value,
          password : password.value
       }
-      
       let uid = response.user.uid
-      
       let userResponse = await setDoc(doc(db,"User", uid),obj)
-      alert("user Successfully Signup")
-      window.location.href= "../Pages/login.html"
-      console.log("userResponse",userResponse);
-      console.log("UID", response.user.uid);
+      alert("Signup Successfully")
+      window.location.href = "../Pages/Login.html"
+      
+    
+      // console.log("userResponse",userResponse);
+      // console.log("UID", response.user.uid);
    }catch(error){
-      console.log(error);
+      alert(error);
       
    }
    

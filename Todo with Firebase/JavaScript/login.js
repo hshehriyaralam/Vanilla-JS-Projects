@@ -1,3 +1,10 @@
+window.addEventListener('load', () => {
+    if(localStorage.getItem("User")){
+        window.location.replace('../index.html')
+    }
+})
+
+
 
 import { auth,
     signInWithEmailAndPassword
@@ -24,11 +31,11 @@ let loginHandler = async () => {
     alert("login Successfully")
     localStorage.setItem("User",uid)
     window.location.replace("../index.html")
-    console.log("uid",uid);
-    console.log("Response",response);
+    // console.log("uid",uid);
+    // console.log("Response",response);
 
 }catch(e){
-    console.log(e);
+    alert(e);
     
 }    
     

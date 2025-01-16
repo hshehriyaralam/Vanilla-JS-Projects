@@ -33,6 +33,9 @@ body {
     font-size: 32px; /* Larger font size */
 }
 
+
+
+
 .todo-wrapper h1 span {
     color: #4caf50; /* Accent color */
 }
@@ -103,6 +106,9 @@ body {
     transition: box-shadow 0.2s;
 }
 
+.hide{
+    display: none;
+}
 .todo-item:hover {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8); /* Shadow on hover */
 }
@@ -175,4 +181,53 @@ body {
     .remove-btn {
         font-size: 14px;
     }
+}
+
+/* Popup Modal */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Above all other elements */
+}
+
+.popup-content {
+    background-color: #1e1e1e;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 300px;
+}
+
+.popup-content p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50; /* Green button */
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #45a049;
+}
+
+/* Hide Popup by Default */
+.hide {
+    display: none;
 }

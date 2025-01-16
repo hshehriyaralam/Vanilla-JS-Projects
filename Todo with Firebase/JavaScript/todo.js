@@ -1,3 +1,16 @@
+window.addEventListener('load', () => {
+    // console.log("user=>", localStorage.getItem("User"));
+    if(!localStorage.getItem("User")){
+            window.location.replace('../Pages/login.html')
+    }
+    
+})
+
+
+
+
+
+
 import {
     collection,
     addDoc,
@@ -10,30 +23,44 @@ import {
     from "./firebase.js";
 
 
+const showPopUp = (message) => {
+    let popUp = document.getElementById('errorPopup')
+    let popUpMessage = document.getElementById('popupMessage')
+    popUpMessage.textContent = message
+    popUp.classList.remove('hide')
+}
+
+const closePopup = () => {
+    let popUp = document.getElementById('errorPopup')
+
+    popUp.classList.add('hide')
+} 
+
+
 let todoParent = document.getElementById('todoParent')
 let todoCollection = collection (db, "Todo Collection")
 const addTodo =  async () => {
     try{
 
         let input = document.getElementById('input')
-        console.log(input.value);
+        // console.log(input.value);
         let obj = {
             value : input.value
         }
         if(!(input.value.trim().length > 0)){
-            
+            showPopUp("Input cannot be empty!")
             return
         }else{
             const result =  await addDoc(todoCollection,obj)
             input.value = ""
             getTodo()
-            console.log(result);
+            // console.log(result);
         }
       
         
         
     }catch(error){
-        console.log(error.message);
+        alert(error.message);
         
     }
 }
@@ -62,7 +89,7 @@ let getTodo = async () => {
         });
         
     }catch(e){
-        console.log(e.message);
+        alert(e.message);
         
     }
     
@@ -78,7 +105,7 @@ let deleteTodo =  async (ele) => {
         getTodo()
         
     }catch(error){
-        console.log(error.message);
+        alert(error.message);
         
     }
 }
@@ -95,7 +122,7 @@ let editTodo = async (ele) => {
         await updateDoc(doc(db,"Todo Collection", id ),obj)
         getTodo()
     }catch(error){
-        console.log(error.message);
+        alert(error.message);
         
     }
         
@@ -108,3 +135,4 @@ window.getTodo = getTodo
 window.addTodo = addTodo
 window.deleteTodo = deleteTodo
 window.editTodo = editTodo
+window.closePopup = closePopup

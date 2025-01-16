@@ -107,6 +107,54 @@ body {
     color: #79c0ff; /* Lighter blue on hover */
 }
 
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    background-color: #58a6ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #79c0ff;
+  }
+
+  
 /* Responsive Design */
 @media (max-width: 480px) {
     .auth-box {
@@ -120,4 +168,6 @@ body {
     .btn {
         font-size: 16px;
     }
+
+
 }
