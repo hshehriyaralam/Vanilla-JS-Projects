@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     if(localStorage.getItem("User")){
-        window.location.replace('../index.html')
+        window.location.replace('./index.html')
     }
 })
 
@@ -8,9 +8,7 @@ window.addEventListener('load', () => {
 
 import { auth,
     signInWithEmailAndPassword
-    ,doc,
-     setDoc
-     ,db } from "./firebase.js"
+    } from "./firebase.js"
 
 
 let loginHandler = async () => {
@@ -30,7 +28,7 @@ let loginHandler = async () => {
     let uid = response.user.uid
     alert("login Successfully")
     localStorage.setItem("User",uid)
-    window.location.replace("../index.html")
+    window.location.replace("./index.html")
     // console.log("uid",uid);
     // console.log("Response",response);
 

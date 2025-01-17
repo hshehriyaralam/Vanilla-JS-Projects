@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
    if(localStorage.getItem("User")){
-      window.location.replace('../Pages/login.html')
+      window.location.replace('./login.html')
    }
 })
 
@@ -38,7 +38,7 @@ const signUpHandler = async () => {
       let uid = response.user.uid
       let userResponse = await setDoc(doc(db,"User", uid),obj)
       alert("Signup Successfully")
-      window.location.href = "../Pages/Login.html"
+      window.location.href = "./Login.html"
       
     
       // console.log("userResponse",userResponse);

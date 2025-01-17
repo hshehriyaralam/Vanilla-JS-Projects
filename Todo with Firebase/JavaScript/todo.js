@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     // console.log("user=>", localStorage.getItem("User"));
     if(!localStorage.getItem("User")){
-            window.location.replace('../Pages/login.html')
+            window.location.replace('./Login.html')
     }
     
 })
@@ -65,7 +65,7 @@ const addTodo =  async () => {
     }
 }
 
-let getTodo = async () => {
+const getTodo = async () => {
     try{
 
         let snapShot = await getDocs(todoCollection)
@@ -96,7 +96,7 @@ let getTodo = async () => {
 }
 
 
-let deleteTodo =  async (ele) => {
+const deleteTodo =  async (ele) => {
     try{
 
         console.log("id", ele.id);
@@ -110,7 +110,7 @@ let deleteTodo =  async (ele) => {
     }
 }
 
-let editTodo = async (ele) => {
+const editTodo = async (ele) => {
     console.log("edit");
     try{
 
@@ -128,11 +128,19 @@ let editTodo = async (ele) => {
         
 } 
 
+const logOut = () => {
+    // console.log("LOgOIt");
+    
+    localStorage.removeItem('User')
+    localStorage.clear()
+    window.location.replace('./Login.html')
+}
+
+
 window.addEventListener('DOMContentLoaded',() => (getTodo()))
-
-
 window.getTodo = getTodo
 window.addTodo = addTodo
 window.deleteTodo = deleteTodo
 window.editTodo = editTodo
 window.closePopup = closePopup
+window.logOut = logOut
