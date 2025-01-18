@@ -1,11 +1,8 @@
 window.addEventListener("load", () => {
    if(localStorage.getItem("User")){
-      window.location.replace('./login.html')
+      window.location.replace('./Login.html')
    }
 })
-
-
-
 
 
 import { auth, 
@@ -17,14 +14,13 @@ import { auth,
 
 
 
+
 const signUpHandler = async () => {
    try{
-
       let name = document.getElementById('name')
       let email = document.getElementById('email')
       let password = document.getElementById('password')
-      //
-      
+
       let response = await createUserWithEmailAndPassword(
          auth,
          email.value,
@@ -32,25 +28,26 @@ const signUpHandler = async () => {
       )
       let obj = {
          name : name.value,
-         email:email.value,
+         email : email.value,
          password : password.value
       }
       let uid = response.user.uid
       let userResponse = await setDoc(doc(db,"User", uid),obj)
       alert("Signup Successfully")
+      // console.log("Signup");
       window.location.href = "./Login.html"
       
     
       // console.log("userResponse",userResponse);
       // console.log("UID", response.user.uid);
    }catch(error){
-      alert(error);
+      console.log(error.message);
+      
       
    }
    
    
 }
-
 
 
 window.signUpHandler = signUpHandler

@@ -8,9 +8,6 @@ window.addEventListener('load', () => {
 
 
 
-
-
-
 import {
     collection,
     addDoc,
